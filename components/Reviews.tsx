@@ -21,7 +21,7 @@ export function Reviews() {
     ];
 
     return (
-        <section className="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <section className="py-16 bg-gradient-to-br from-vista-dark to-gray-900 text-white">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold text-center mb-4">
                     Wat Klanten Zeggen
@@ -34,7 +34,7 @@ export function Reviews() {
                     {reviews.map((review, index) => (
                         <div
                             key={index}
-                            className="bg-white text-gray-900 p-6 rounded-xl shadow-xl"
+                            className="bg-white text-vista-dark p-6 rounded-xl shadow-xl"
                         >
                             <div className="flex items-center gap-1 mb-3">
                                 {[...Array(review.rating)].map((_, i) => (
@@ -53,7 +53,7 @@ export function Reviews() {
                 </div>
 
                 <div className="text-center mt-12">
-                    <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">
+                    <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20">
                         <span className="text-2xl">⭐</span>
                         <span className="font-bold text-lg">4.9/5</span>
                         <span className="text-gray-300">• 500+ reviews</span>

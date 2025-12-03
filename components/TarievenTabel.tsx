@@ -35,7 +35,7 @@ export function TarievenTabel() {
     return (
         <section className="py-16 bg-white">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-center mb-4">
+                <h2 className="text-4xl font-bold text-center mb-4 text-vista-dark">
                     Transparante Tarieven
                 </h2>
                 <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -43,11 +43,11 @@ export function TarievenTabel() {
                 </p>
 
                 <div className="max-w-4xl mx-auto">
-                    <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-xl overflow-hidden">
+                    <div className="bg-gradient-to-br from-lime-50 to-lime-100 rounded-xl shadow-xl overflow-hidden">
                         <div className="overflow-x-auto">
                             <table className="w-full">
                                 <thead>
-                                    <tr className="bg-green-900 text-white">
+                                    <tr className="bg-vista-dark text-white">
                                         <th className="px-6 py-4 text-left">Dienst</th>
                                         <th className="px-6 py-4 text-left">Prijs</th>
                                         <th className="px-6 py-4 text-left">Opmerking</th>
@@ -57,13 +57,13 @@ export function TarievenTabel() {
                                     {tarieven.map((tarief, index) => (
                                         <tr
                                             key={index}
-                                            className={`${index % 2 === 0 ? "bg-white" : "bg-green-50"
-                                                } hover:bg-green-100 transition-colors`}
+                                            className={`${index % 2 === 0 ? "bg-white" : "bg-lime-50"
+                                                } hover:bg-lime-100 transition-colors`}
                                         >
-                                            <td className="px-6 py-4 font-medium">
+                                            <td className="px-6 py-4 font-medium text-vista-dark">
                                                 {tarief.dienst}
                                             </td>
-                                            <td className="px-6 py-4 font-bold text-green-900">
+                                            <td className="px-6 py-4 font-bold text-vista-green">
                                                 {tarief.prijs}
                                             </td>
                                             <td className="px-6 py-4 text-sm text-gray-600">

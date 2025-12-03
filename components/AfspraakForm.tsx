@@ -40,12 +40,12 @@ export function AfspraakForm() {
 
     if (done) {
         return (
-            <div className="bg-green-50 border-2 border-green-500 rounded-xl p-8 text-center">
+            <div className="bg-lime-50 border-2 border-vista-green rounded-xl p-8 text-center">
                 <div className="text-6xl mb-4">✅</div>
-                <h3 className="text-2xl font-bold text-green-800 mb-2">
+                <h3 className="text-2xl font-bold text-vista-dark mb-2">
                     Afspraak Aangevraagd!
                 </h3>
-                <p className="text-green-700">
+                <p className="text-gray-700">
                     Bedankt! Ik neem zo snel mogelijk contact met je op.
                 </p>
             </div>
@@ -54,12 +54,12 @@ export function AfspraakForm() {
 
     return (
         <div className="bg-white rounded-xl shadow-xl p-8">
-            <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-6 rounded">
+            <div className="bg-lime-50 border-l-4 border-vista-green p-4 mb-6 rounded">
                 <p className="text-sm text-gray-700">
                     <strong>⚠️ Voor spoed:</strong> Bel direct naar{" "}
                     <a
                         href="tel:0648035685"
-                        className="text-green-600 font-bold underline"
+                        className="text-vista-green font-bold underline"
                     >
                         06-48035685
                     </a>
@@ -70,57 +70,57 @@ export function AfspraakForm() {
 
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                    <label className="block text-sm font-medium mb-2">
+                    <label className="block text-sm font-medium mb-2 text-vista-dark">
                         Naam <span className="text-red-500">*</span>
                     </label>
                     <input
                         name="name"
                         required
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-vista-green focus:outline-none transition-colors"
                         placeholder="Uw naam"
                     />
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium mb-2">
+                    <label className="block text-sm font-medium mb-2 text-vista-dark">
                         Telefoonnummer <span className="text-red-500">*</span>
                     </label>
                     <input
                         name="phone"
                         required
                         type="tel"
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-vista-green focus:outline-none transition-colors"
                         placeholder="06-48035685"
                     />
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium mb-2">E-mail</label>
+                    <label className="block text-sm font-medium mb-2 text-vista-dark">E-mail</label>
                     <input
                         name="email"
                         type="email"
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-vista-green focus:outline-none transition-colors"
                         placeholder="uw.email@example.com"
                     />
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium mb-2">Adres</label>
+                    <label className="block text-sm font-medium mb-2 text-vista-dark">Adres</label>
                     <input
                         name="address"
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-vista-green focus:outline-none transition-colors"
                         placeholder="Straat 123, Plaats"
                     />
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium mb-2">
+                    <label className="block text-sm font-medium mb-2 text-vista-dark">
                         Soort klus <span className="text-red-500">*</span>
                     </label>
                     <select
                         name="jobType"
                         required
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-vista-green focus:outline-none transition-colors"
                     >
                         <option value="">Maak een keuze</option>
                         <option value="deur-openen">Deur openen (geen spoed)</option>
@@ -134,22 +134,22 @@ export function AfspraakForm() {
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium mb-2">
+                    <label className="block text-sm font-medium mb-2 text-vista-dark">
                         Gewenste datum/tijd
                     </label>
                     <input
                         name="preferredDate"
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-vista-green focus:outline-none transition-colors"
                         placeholder="bijv. morgen 14:00"
                     />
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium mb-2">Opmerkingen</label>
+                    <label className="block text-sm font-medium mb-2 text-vista-dark">Opmerkingen</label>
                     <textarea
                         name="notes"
                         rows={4}
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-vista-green focus:outline-none transition-colors"
                         placeholder="Extra informatie..."
                     />
                 </div>
@@ -163,7 +163,7 @@ export function AfspraakForm() {
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white rounded-lg px-6 py-4 font-bold text-lg hover:from-green-700 hover:to-green-800 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105"
+                    className="w-full bg-gradient-to-r from-vista-green to-lime-600 text-vista-dark rounded-lg px-6 py-4 font-bold text-lg hover:from-lime-500 hover:to-vista-green transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105"
                 >
                     {loading ? "Verzenden..." : "📅 Afspraak Aanvragen"}
                 </button>

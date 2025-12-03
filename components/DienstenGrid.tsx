@@ -41,7 +41,7 @@ export function DienstenGrid() {
     return (
         <section id="diensten" className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-center mb-4">Onze Diensten</h2>
+                <h2 className="text-4xl font-bold text-center mb-4 text-vista-dark">Onze Diensten</h2>
                 <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
                     Van spoedopeningen tot preventief onderhoud - wij staan voor u klaar
                 </p>
@@ -50,7 +50,7 @@ export function DienstenGrid() {
                     {diensten.map((dienst, index) => (
                         <div
                             key={index}
-                            className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 border-2 border-transparent hover:border-green-500"
+                            className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 border-2 border-transparent hover:border-vista-green"
                         >
                             {dienst.spoed && (
                                 <div className="inline-block bg-red-600 text-white text-xs px-3 py-1 rounded-full font-bold mb-3">
@@ -58,7 +58,7 @@ export function DienstenGrid() {
                                 </div>
                             )}
                             <div className="text-5xl mb-4">{dienst.icon}</div>
-                            <h3 className="text-xl font-bold mb-2">{dienst.title}</h3>
+                            <h3 className="text-xl font-bold mb-2 text-vista-dark">{dienst.title}</h3>
                             <p className="text-gray-600">{dienst.description}</p>
                         </div>
                     ))}
