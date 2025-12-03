@@ -54,11 +54,14 @@ export function AfspraakForm() {
 
     return (
         <div className="bg-white rounded-xl shadow-xl p-8">
-            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6 rounded">
+            <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-6 rounded">
                 <p className="text-sm text-gray-700">
                     <strong>⚠️ Voor spoed:</strong> Bel direct naar{" "}
-                    <a href="tel:0612345678" className="text-blue-600 font-bold underline">
-                        06-12345678
+                    <a
+                        href="tel:0648035685"
+                        className="text-green-600 font-bold underline"
+                    >
+                        06-48035685
                     </a>
                     <br />
                     Dit formulier is alleen voor <strong>niet-spoed</strong> afspraken.
@@ -73,7 +76,7 @@ export function AfspraakForm() {
                     <input
                         name="name"
                         required
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
                         placeholder="Uw naam"
                     />
                 </div>
@@ -86,8 +89,8 @@ export function AfspraakForm() {
                         name="phone"
                         required
                         type="tel"
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
-                        placeholder="06-12345678"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
+                        placeholder="06-48035685"
                     />
                 </div>
 
@@ -96,7 +99,7 @@ export function AfspraakForm() {
                     <input
                         name="email"
                         type="email"
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
                         placeholder="uw.email@example.com"
                     />
                 </div>
@@ -105,7 +108,7 @@ export function AfspraakForm() {
                     <label className="block text-sm font-medium mb-2">Adres</label>
                     <input
                         name="address"
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
                         placeholder="Straat 123, Plaats"
                     />
                 </div>
@@ -117,7 +120,7 @@ export function AfspraakForm() {
                     <select
                         name="jobType"
                         required
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
                     >
                         <option value="">Maak een keuze</option>
                         <option value="deur-openen">Deur openen (geen spoed)</option>
@@ -136,7 +139,7 @@ export function AfspraakForm() {
                     </label>
                     <input
                         name="preferredDate"
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
                         placeholder="bijv. morgen 14:00"
                     />
                 </div>
@@ -146,7 +149,7 @@ export function AfspraakForm() {
                     <textarea
                         name="notes"
                         rows={4}
-                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-blue-500 focus:outline-none transition-colors"
+                        className="w-full border-2 border-gray-300 rounded-lg px-4 py-3 focus:border-green-500 focus:outline-none transition-colors"
                         placeholder="Extra informatie..."
                     />
                 </div>
@@ -160,7 +163,7 @@ export function AfspraakForm() {
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg px-6 py-4 font-bold text-lg hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105"
+                    className="w-full bg-gradient-to-r from-green-600 to-green-700 text-white rounded-lg px-6 py-4 font-bold text-lg hover:from-green-700 hover:to-green-800 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105"
                 >
                     {loading ? "Verzenden..." : "📅 Afspraak Aanvragen"}
                 </button>

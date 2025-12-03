@@ -21,12 +21,12 @@ export function Reviews() {
     ];
 
     return (
-        <section className="py-16 bg-gradient-to-br from-blue-900 to-blue-800 text-white">
+        <section className="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold text-center mb-4">
                     Wat Klanten Zeggen
                 </h2>
-                <p className="text-center text-blue-200 mb-12 max-w-2xl mx-auto">
+                <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
                     Meer dan 500+ tevreden klanten in de regio
                 </p>
 
@@ -56,7 +56,7 @@ export function Reviews() {
                     <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">
                         <span className="text-2xl">⭐</span>
                         <span className="font-bold text-lg">4.9/5</span>
-                        <span className="text-blue-200">• 500+ reviews</span>
+                        <span className="text-gray-300">• 500+ reviews</span>
                     </div>
                 </div>
             </div>

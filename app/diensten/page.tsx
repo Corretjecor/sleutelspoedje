@@ -4,10 +4,10 @@ import { CallNowButton } from "@/components/CallNowButton";
 export default function DienstenPage() {
     return (
         <div>
-            <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-16">
+            <section className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-5xl font-bold mb-4">Onze Diensten</h1>
-                    <p className="text-xl text-blue-200 mb-8">
+                    <p className="text-xl text-gray-300 mb-8">
                         Professionele slotenservice voor particulier en zakelijk
                     </p>
                     <CallNowButton />

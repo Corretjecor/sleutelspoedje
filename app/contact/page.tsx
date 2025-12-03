@@ -4,10 +4,10 @@ import { AfspraakForm } from "@/components/AfspraakForm";
 export default function ContactPage() {
     return (
         <div>
-            <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-16">
+            <section className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-5xl font-bold mb-4">Contact</h1>
-                    <p className="text-xl text-blue-200 mb-8">
+                    <p className="text-xl text-gray-300 mb-8">
                         24/7 bereikbaar voor al uw vragen
                     </p>
                     <CallNowButton />
@@ -24,16 +24,16 @@ export default function ContactPage() {
                             <div className="space-y-6">
                                 <div className="bg-white p-6 rounded-xl shadow-lg">
                                     <div className="flex items-center gap-4 mb-3">
-                                        <div className="bg-blue-100 p-3 rounded-lg">
+                                        <div className="bg-green-100 p-3 rounded-lg">
                                             <span className="text-2xl">📞</span>
                                         </div>
                                         <div>
                                             <h3 className="font-bold">Telefonisch</h3>
                                             <a
-                                                href="tel:0612345678"
-                                                className="text-blue-600 text-xl font-bold hover:underline"
+                                                href="tel:0648035685"
+                                                className="text-green-600 text-xl font-bold hover:underline"
                                             >
-                                                06-12345678
+                                                06-48035685
                                             </a>
                                         </div>
                                     </div>
@@ -45,14 +45,14 @@ export default function ContactPage() {
 
                                 <div className="bg-white p-6 rounded-xl shadow-lg">
                                     <div className="flex items-center gap-4 mb-3">
-                                        <div className="bg-blue-100 p-3 rounded-lg">
+                                        <div className="bg-green-100 p-3 rounded-lg">
                                             <span className="text-2xl">✉️</span>
                                         </div>
                                         <div>
                                             <h3 className="font-bold">E-mail</h3>
                                             <a
                                                 href="mailto:info@sleutelspoedje.nl"
-                                                className="text-blue-600 hover:underline"
+                                                className="text-green-600 hover:underline"
                                             >
                                                 info@sleutelspoedje.nl
                                             </a>
@@ -65,7 +65,7 @@ export default function ContactPage() {
 
                                 <div className="bg-white p-6 rounded-xl shadow-lg">
                                     <div className="flex items-center gap-4 mb-3">
-                                        <div className="bg-blue-100 p-3 rounded-lg">
+                                        <div className="bg-green-100 p-3 rounded-lg">
                                             <span className="text-2xl">🕐</span>
                                         </div>
                                         <div>

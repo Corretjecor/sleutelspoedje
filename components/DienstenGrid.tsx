@@ -50,7 +50,7 @@ export function DienstenGrid() {
                     {diensten.map((dienst, index) => (
                         <div
                             key={index}
-                            className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 border-2 border-transparent hover:border-blue-500"
+                            className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 border-2 border-transparent hover:border-green-500"
                         >
                             {dienst.spoed && (
                                 <div className="inline-block bg-red-600 text-white text-xs px-3 py-1 rounded-full font-bold mb-3">

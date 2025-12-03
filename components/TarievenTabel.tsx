@@ -43,11 +43,11 @@ export function TarievenTabel() {
                 </p>
 
                 <div className="max-w-4xl mx-auto">
-                    <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-xl overflow-hidden">
+                    <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-xl overflow-hidden">
                         <div className="overflow-x-auto">
                             <table className="w-full">
                                 <thead>
-                                    <tr className="bg-blue-900 text-white">
+                                    <tr className="bg-green-900 text-white">
                                         <th className="px-6 py-4 text-left">Dienst</th>
                                         <th className="px-6 py-4 text-left">Prijs</th>
                                         <th className="px-6 py-4 text-left">Opmerking</th>
@@ -57,13 +57,13 @@ export function TarievenTabel() {
                                     {tarieven.map((tarief, index) => (
                                         <tr
                                             key={index}
-                                            className={`${index % 2 === 0 ? "bg-white" : "bg-blue-50"
-                                                } hover:bg-blue-100 transition-colors`}
+                                            className={`${index % 2 === 0 ? "bg-white" : "bg-green-50"
+                                                } hover:bg-green-100 transition-colors`}
                                         >
                                             <td className="px-6 py-4 font-medium">
                                                 {tarief.dienst}
                                             </td>
-                                            <td className="px-6 py-4 font-bold text-blue-900">
+                                            <td className="px-6 py-4 font-bold text-green-900">
                                                 {tarief.prijs}
                                             </td>
                                             <td className="px-6 py-4 text-sm text-gray-600">

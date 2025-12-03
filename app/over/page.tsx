@@ -3,10 +3,10 @@ import { CallNowButton } from "@/components/CallNowButton";
 export default function OverPage() {
     return (
         <div>
-            <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-16">
+            <section className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-5xl font-bold mb-4">Over Sleutelspoedje</h1>
-                    <p className="text-xl text-blue-200">
+                    <p className="text-xl text-gray-300">
                         Uw betrouwbare partner in slotenservice
                     </p>
                 </div>
@@ -72,7 +72,7 @@ export default function OverPage() {
                             </li>
                         </ul>
 
-                        <div className="bg-blue-50 p-8 rounded-xl mt-12 text-center">
+                        <div className="bg-green-50 p-8 rounded-xl mt-12 text-center">
                             <h3 className="text-2xl font-bold mb-4">Direct Hulp Nodig?</h3>
                             <p className="text-gray-700 mb-6">
                                 Bel ons nu en onze monteur is binnen 30 minuten bij u!

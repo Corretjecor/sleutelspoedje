@@ -1,8 +1,8 @@
 export function CallNowButton() {
     return (
         <a
-            href="tel:0612345678"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-5 rounded-xl font-bold text-xl hover:from-red-700 hover:to-red-600 transition-all shadow-2xl hover:shadow-red-500/50 transform hover:scale-105 animate-pulse"
+            href="tel:0648035685"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-green-500 text-white px-8 py-5 rounded-xl font-bold text-xl hover:from-green-700 hover:to-green-600 transition-all shadow-2xl hover:shadow-green-500/50 transform hover:scale-105 animate-pulse"
         >
             <svg
                 className="w-8 h-8"
@@ -17,7 +17,7 @@ export function CallNowButton() {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 />
             </svg>
-            <span>BEL NU: 06-12345678</span>
+            <span>BEL NU: 06-48035685</span>
         </a>
     );
 }

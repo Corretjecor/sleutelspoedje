@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
     return (
@@ -6,9 +7,15 @@ export function Footer() {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
-                        <h3 className="text-xl font-bold mb-4 text-yellow-400">
-                            Sleutelspoedje
-                        </h3>
+                        <div className="mb-4">
+                            <Image
+                                src="/logo-light.png"
+                                alt="Sleutelspoedje Logo"
+                                width={150}
+                                height={50}
+                                className="h-10 w-auto"
+                            />
+                        </div>
                         <p className="text-gray-400">
                             Uw betrouwbare 24/7 slotenmaker voor alle spoedreparaties en
                             sleutelservice.
@@ -21,7 +28,7 @@ export function Footer() {
                             <li>
                                 <Link
                                     href="/diensten"
-                                    className="text-gray-400 hover:text-yellow-400 transition-colors"
+                                    className="text-gray-400 hover:text-green-400 transition-colors"
                                 >
                                     Diensten
                                 </Link>
@@ -29,7 +36,7 @@ export function Footer() {
                             <li>
                                 <Link
                                     href="/tarieven"
-                                    className="text-gray-400 hover:text-yellow-400 transition-colors"
+                                    className="text-gray-400 hover:text-green-400 transition-colors"
                                 >
                                     Tarieven
                                 </Link>
@@ -37,7 +44,7 @@ export function Footer() {
                             <li>
                                 <Link
                                     href="/over"
-                                    className="text-gray-400 hover:text-yellow-400 transition-colors"
+                                    className="text-gray-400 hover:text-green-400 transition-colors"
                                 >
                                     Over Ons
                                 </Link>
@@ -45,7 +52,7 @@ export function Footer() {
                             <li>
                                 <Link
                                     href="/contact"
-                                    className="text-gray-400 hover:text-yellow-400 transition-colors"
+                                    className="text-gray-400 hover:text-green-400 transition-colors"
                                 >
                                     Contact
                                 </Link>
@@ -59,17 +66,17 @@ export function Footer() {
                             <li className="flex items-center gap-2">
                                 <span>📞</span>
                                 <a
-                                    href="tel:0612345678"
-                                    className="hover:text-yellow-400 transition-colors"
+                                    href="tel:0648035685"
+                                    className="hover:text-green-400 transition-colors"
                                 >
-                                    06-12345678
+                                    06-48035685
                                 </a>
                             </li>
                             <li className="flex items-center gap-2">
                                 <span>✉️</span>
                                 <a
                                     href="mailto:info@sleutelspoedje.nl"
-                                    className="hover:text-yellow-400 transition-colors"
+                                    className="hover:text-green-400 transition-colors"
                                 >
                                     info@sleutelspoedje.nl
                                 </a>
